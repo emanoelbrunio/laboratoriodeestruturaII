@@ -14,9 +14,9 @@ int main(void){
         	pi = pi - 4 / x;
 		}
         x = x + 2;
+		printf("\n");
+		printf("PI: %.10f", pi);
     }
-	printf("\n\n");
-	printf("PI: %.20f", pi);
-
+	
 	return 0;
 }
