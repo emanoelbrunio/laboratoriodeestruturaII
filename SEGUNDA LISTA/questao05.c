@@ -11,7 +11,7 @@ int contfib(int n, int k){
         return 1;
     }
     else {
-        return fib(n-1, k) + fib(n-2, k);
+        return fib(n-1) + fib(n-2);
     }
 }
 
@@ -20,7 +20,7 @@ int fib(int n){
         return n;
     }
     else {
-        return fib (n-1) + fib(n-2);
+        return fib(n-1) + fib(n-2);
     }
 }
 
@@ -33,23 +33,6 @@ int main (void){
     //contfib(n, k);
 
     int m = contfib(n, k);
-    printf("O Fibonacci de %d e calculado %d vezes dentro do Fibonnaci de %d", k, m, n);
+    printf("ContFib(%d, %d) = %d", n, k, m);
     return 0;
 }
-
-/*void contfib (int n, int k){
-    int cont = 0;
-    int i;
-
-    for(i = 0; i < n; i++){
-
-        if (k < n){
-            fib(k);
-            cont = cont + 1;
-        }
-    }
-
-    printf("N: %d\n", cont);
-}
-
-*/
