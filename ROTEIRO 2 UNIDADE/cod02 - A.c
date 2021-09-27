@@ -68,13 +68,10 @@ int inserir(Hash *ha, Aluno aluno1){
     ha->qtd++;
     return 1;
     
-  //main
-  // int x = intsereHash_SemColisao(ha, al);
 }
 
 int buscar(Hash* ha, int mat, Aluno* aluno1){
     
-    //Aluno aluno1;
     if(ha == NULL){
         // caso a tabela nao existam retorna 0
         return 0;
@@ -90,11 +87,8 @@ int buscar(Hash* ha, int mat, Aluno* aluno1){
     
     //caso exista elementos, ele ignora o if anterior e entra aqui
     *aluno1 = *(ha->itens[posicao]);
-    //return aluno1->matricula;
-    return 1;
     
-  //no main
-  // int x = buscaHash_SemColisao(ha, mat, &al);
+    return 1;
 }
 
 int remover(Hash* ha, int mat){
